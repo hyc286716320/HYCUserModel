@@ -15,4 +15,20 @@ Then, run the following command:
 `$ pod install`
 
 ## Usage
-### ImageObject处数组里面的元素为一组手图,一次可添加多张,每一个字典为一张手图,数组内用逗号隔开
+* 说起使用来啊,请大家注意几点
+  > 1. 存储用户信息的模型只能创建一个
+  > 2. 创建的模型需要继承HYCUserModel后使用
+  > 3. 需要给给创建的模型实现单例方法并声明出来,并且单例的名字请写成`sharedManager`
+       >单例的实现请粘贴下面代码到工程中
+       ```
+       + (<#ClassName#> *)sharedManager
+        {
+           static <#ClassName#> *sharedAccountManagerInstance = nil;
+            static dispatch_once_t predicate;
+           dispatch_once(&predicate, ^{
+           sharedAccountManagerInstance = [[self alloc] init];
+           });
+            return sharedAccountManagerInstance;
+        }
+       ```
+
