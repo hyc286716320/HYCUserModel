@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 s.name     = 'HYCUserModel'
 s.version  = '1.0' 
  s.license = { :type => "MIT", :file => "LICENSE" }
-s.summary  = '输入日期获取节气,农历节日,公历节日,星期,年月日公历,农历等等' 
+s.summary  = '利用用户偏好设置存储用户重要信息,登陆信息等重要信息,使用方法简单,数据准确' 
 s.homepage = 'https://github.com/hyc286716320/HYCUserModel'
 s.author   = {'HuYunchao' => 'hyc286716320'} 
 s.source   = { :git => 'https://github.com/hyc286716320/HYCUserModel.git', :tag =>s.version} 
