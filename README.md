@@ -43,7 +43,7 @@ Then, run the following command:
 ## 正式使用
 
 1. __导入自己创建的model的名字__
-2. __向model中添加数据,可添加多条或者一条,代码如下
+2. __向model中添加数据,可添加多条或者一条,代码如下__
    ```
    [MyUserData setHYCModelDict:@{
                                   @"userName":@"HYC",
@@ -53,11 +53,11 @@ Then, run the following command:
                                   }];
    ```
    
-3. __删除所有数据
+3. __删除所有数据__
 
    `[MyUserData removeHYCModelAllObject];`
    
-4. __读取数据
+4. __读取数据__
 
    `[MyUserData sharedManager].userName`
    
