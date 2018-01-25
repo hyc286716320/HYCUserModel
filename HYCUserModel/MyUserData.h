@@ -6,7 +6,8 @@
 //  Copyright © 2018年 hyc. All rights reserved.
 //
 
-#import "HYCUserModel.h"
+#import <UIKit/UIKit.h>
+#import <HYCUserModel/HYCUserModel.h>
 #define MyUserDataH [MyUserData sharedManager]
 @interface MyUserData : HYCUserModel
 

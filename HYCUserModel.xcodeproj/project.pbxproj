@@ -15,8 +15,8 @@
 		0C74738820197B3E0054AA9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C74738720197B3E0054AA9D /* main.m */; };
 		0C74739220197B3E0054AA9D /* HYCUserModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C74739120197B3E0054AA9D /* HYCUserModelTests.m */; };
 		0C74739D20197B3E0054AA9D /* HYCUserModelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C74739C20197B3E0054AA9D /* HYCUserModelUITests.m */; };
-		0C7473AD20197BEC0054AA9D /* HYCUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7473AC20197BEC0054AA9D /* HYCUserModel.m */; };
-		0C7473B020197C1F0054AA9D /* MyUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7473AF20197C1F0054AA9D /* MyUserData.m */; };
+		0C8E38122019A80400FBAEF3 /* HYCUserModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8E38112019A80300FBAEF3 /* HYCUserModel.framework */; };
+		0C8E38152019A81500FBAEF3 /* MyUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8E38142019A81500FBAEF3 /* MyUserData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +53,9 @@
 		0C74739820197B3E0054AA9D /* HYCUserModelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYCUserModelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C74739C20197B3E0054AA9D /* HYCUserModelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYCUserModelUITests.m; sourceTree = "<group>"; };
 		0C74739E20197B3E0054AA9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C7473AB20197BEC0054AA9D /* HYCUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCUserModel.h; sourceTree = "<group>"; };
-		0C7473AC20197BEC0054AA9D /* HYCUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYCUserModel.m; sourceTree = "<group>"; };
-		0C7473AE20197C1F0054AA9D /* MyUserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUserData.h; sourceTree = "<group>"; };
-		0C7473AF20197C1F0054AA9D /* MyUserData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyUserData.m; sourceTree = "<group>"; };
+		0C8E38112019A80300FBAEF3 /* HYCUserModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HYCUserModel.framework; sourceTree = "<group>"; };
+		0C8E38132019A81500FBAEF3 /* MyUserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUserData.h; sourceTree = "<group>"; };
+		0C8E38142019A81500FBAEF3 /* MyUserData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyUserData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8E38122019A80400FBAEF3 /* HYCUserModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,13 +107,13 @@
 		0C74737720197B3E0054AA9D /* HYCUserModel */ = {
 			isa = PBXGroup;
 			children = (
-				0C7473AA20197BEC0054AA9D /* HYCUserModel */,
+				0C8E38112019A80300FBAEF3 /* HYCUserModel.framework */,
 				0C74737820197B3E0054AA9D /* AppDelegate.h */,
 				0C74737920197B3E0054AA9D /* AppDelegate.m */,
 				0C74737B20197B3E0054AA9D /* ViewController.h */,
 				0C74737C20197B3E0054AA9D /* ViewController.m */,
-				0C7473AE20197C1F0054AA9D /* MyUserData.h */,
-				0C7473AF20197C1F0054AA9D /* MyUserData.m */,
+				0C8E38132019A81500FBAEF3 /* MyUserData.h */,
+				0C8E38142019A81500FBAEF3 /* MyUserData.m */,
 				0C74737E20197B3E0054AA9D /* Main.storyboard */,
 				0C74738120197B3E0054AA9D /* Assets.xcassets */,
 				0C74738320197B3E0054AA9D /* LaunchScreen.storyboard */,
@@ -139,15 +139,6 @@
 				0C74739E20197B3E0054AA9D /* Info.plist */,
 			);
 			path = HYCUserModelUITests;
-			sourceTree = "<group>";
-		};
-		0C7473AA20197BEC0054AA9D /* HYCUserModel */ = {
-			isa = PBXGroup;
-			children = (
-				0C7473AB20197BEC0054AA9D /* HYCUserModel.h */,
-				0C7473AC20197BEC0054AA9D /* HYCUserModel.m */,
-			);
-			path = HYCUserModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,9 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C74737D20197B3E0054AA9D /* ViewController.m in Sources */,
-				0C7473AD20197BEC0054AA9D /* HYCUserModel.m in Sources */,
-				0C7473B020197C1F0054AA9D /* MyUserData.m in Sources */,
 				0C74738820197B3E0054AA9D /* main.m in Sources */,
+				0C8E38152019A81500FBAEF3 /* MyUserData.m in Sources */,
 				0C74737A20197B3E0054AA9D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +441,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HYCUserModel",
+				);
 				INFOPLIST_FILE = HYCUserModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JLC.HYCUserModel;
@@ -464,6 +458,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HYCUserModel",
+				);
 				INFOPLIST_FILE = HYCUserModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JLC.HYCUserModel;

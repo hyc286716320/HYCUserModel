@@ -33,11 +33,11 @@
     [self GoOnTextView];
 }
 - (BOOL)GoOnTextView{
-    self.TV.text = [NSString stringWithFormat:@"\n姓名-->%@\n\n工作-->%@\n\n年龄-->%zd\n\n女朋友?->%d\n",
+    self.TV.text = [NSString stringWithFormat:@"\n姓名-->%@\n\n工作-->%@\n\n年龄-->%zd\n\n女朋友?->%@\n",
                     MyUserDataH.userName,
                     MyUserDataH.work,
                     MyUserDataH.ages,
-                    MyUserDataH.isHaveGirlFriend
+                    MyUserDataH.isHaveGirlFriend?@"YES":@"NO"
                     ];
     return self.TV.text.length;
 }
