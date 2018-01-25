@@ -8,7 +8,7 @@ s.homepage = 'https://github.com/hyc286716320/HYCUserModel'
 s.author   = {'HuYunchao' => 'hyc286716320'} 
 s.source   = { :git => 'https://github.com/hyc286716320/HYCUserModel.git', :tag =>s.version} 
 s.platform     = :ios 
-s.source_files = 'HYCUserModel/HYCUserModel'
+s.source_files = 'HYCUserModel/HYCUserModel/.{h,m}'
 s.requires_arc = true
 
 #s.dependency 'ReactiveCocoa','~> 2.5'
