@@ -23,35 +23,34 @@ Then, run the following command:
   
   3. 需要给给创建的模型实现单例方法并声明出来,并且单例的名字请写成
   
-      `+ (<#ClassName#> *)sharedManager;`
+`+ (<#ClassName#> *)sharedManager;`
+
   
   4. 单例的实现请粘贴下面代码到工程中
        
-       ```
-       + (<#ClassName#> *)sharedManager
-        {
-           static <#ClassName#> *sharedAccountManagerInstance = nil;
-            static dispatch_once_t predicate;
-           dispatch_once(&predicate, ^{
-           sharedAccountManagerInstance = [[self alloc] init];
-           });
-            return sharedAccountManagerInstance;
-        }
-        ```
+       ```+ (<#ClassName#> *)sharedManager
+           {
+              static <#ClassName#> *sharedAccountManagerInstance = nil;
+               static dispatch_once_t predicate;
+              dispatch_once(&predicate, ^{
+              sharedAccountManagerInstance = [[self alloc] init];
+              });
+               return sharedAccountManagerInstance;
+           }```
         
 
 ## 正式使用
 
 1. __导入自己创建的model的名字__
 2. __向model中添加数据,可添加多条或者一条,代码如下__
-   ```
+`
    [MyUserData setHYCModelDict:@{
                                   @"userName":@"HYC",
                                   @"ages":@18,
                                   @"work":@"iOS",
                                   //@"isHaveGirlFriend":@NO
                                   }];
-   ```
+`
    
 3. __删除所有数据__
 
