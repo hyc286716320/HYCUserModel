@@ -29,15 +29,15 @@ Then, run the following command:
   4. 单例的实现请粘贴下面代码到工程中
        
 ```
-       + (<#ClassName#> *)sharedManager
-           {
-              static <#ClassName#> *sharedAccountManagerInstance = nil;
-               static dispatch_once_t predicate;
-              dispatch_once(&predicate, ^{
-              sharedAccountManagerInstance = [[self alloc] init];
-              });
-               return sharedAccountManagerInstance;
-           }
+  + (<#ClassName#> *)sharedManager
+    {
+    static <#ClassName#> *sharedAccountManagerInstance = nil;
+    static dispatch_once_t predicate;
+    dispatch_once(&predicate, ^{
+    sharedAccountManagerInstance = [[self alloc] init];
+    });
+    return sharedAccountManagerInstance;
+   }
 ```
         
 
